@@ -18,6 +18,8 @@ jobs:
         with:
           #👇 Sets the version of Node.js to use
           node-version: 20
+      - name: Install dependencies
+        run: npm install
       - run: yarn
         #👇 Adds Chromatic as a step in the workflow
       - uses: chromaui/action@v1
