@@ -12,7 +12,7 @@ const StyledButton = styled.button<ButtonProps>({
   borderRadius: '6px',
   backgroundColor: '#499970',
   fontSize: '16px',
-  boxShadow: '1px 1px 20px black',
+  boxShadow: '1px 1px 20px #d3d3d3',
 })
 
 export function Button({ children, ...rest }: ButtonProps) {
