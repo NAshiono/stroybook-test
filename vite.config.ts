@@ -31,15 +31,21 @@
 import react from '@vitejs/plugin-react'
 import path from 'node:path'
 import { defineConfig } from 'vite'
+import dts from 'vite-plugin-dts'
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    dts({
+      insertTypesEntry: true,
+    }),
+  ],
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
       name: 'Storybook Test',
       formats: ['es', 'umd'],
-      fileName: (format) => `sicon-dev-storybook-test.${format}.js`,
+      fileName: (format) => `sicon-dev-storybook-test.${format}.ts`,
     },
     rollupOptions: {
       external: ['react', 'react-dom', '@emotion/styled'],
