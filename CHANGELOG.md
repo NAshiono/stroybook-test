@@ -1,3 +1,15 @@
+# v1.6.5 (Thu May 02 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Updated config file to generate d.ts files ([@NAshiono](https://github.com/NAshiono))
+
+#### Authors: 1
+
+- [@NAshiono](https://github.com/NAshiono)
+
+---
+
 # v1.6.4 (Thu May 02 2024)
 
 #### ⚠️ Pushed to `main`
